@@ -1,4 +1,4 @@
-# 🚀 K Yogananda Reddy — Personal Portfolio
+# K Yogananda Reddy — Personal Portfolio
 
 [![GitHub](https://img.shields.io/badge/GitHub-yogananda151-181717?style=flat&logo=github)](https://github.com/yogananda151)
 [![LeetCode](https://img.shields.io/badge/LeetCode-yogananda151-FFA116?style=flat&logo=leetcode)](https://leetcode.com/u/yogananda151/)
@@ -9,50 +9,50 @@
 
 ---
 
-## ✨ Features & Highlights
+## Features & Highlights
 
-- **🌌 3D Interactive Visuals**:
+- **3D Interactive Visuals**:
   - Neural network background powered by **Vanta.js** & **Three.js**.
   - Interactive 3D DNA Double Helix canvas with custom particle shaders.
   - Floating 3D CSS isometric cubes with multi-layer depth.
   - Custom cursor glow and trailing particles.
-  
 
-- **💻 Interactive Showcase**:
+- **Interactive Showcase**:
   - **Projects Section**: Interactive glassmorphism project cards with live demo & GitHub repository links.
   - **Skills & Tech Stack**: Categorized skill pills with animated progress bars (AI/ML, Core Languages, Web & Cloud, Tools).
+  - **Interest Areas**: Custom animated SVG vector badges with micro-interactions and tailored glowing states.
   - **LeetCode & GitHub Integrations**: Live stats counter, problems solved, and direct coding profile links.
   - **Education & Experience Timeline**: Vertical timeline detailing academic milestones at Amrita Vishwa Vidyapeetham.
   - **Contact Section**: Direct email links, phone, location, and social links with hover micro-interactions.
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - **HTML5** & **Semantic Web Standards**
 - **Modern Vanilla CSS3** (Custom Design Tokens, Glassmorphism, CSS Grid & Flexbox, Keyframe Animations)
 - **Vanilla JavaScript (ES6+)**
 - **Three.js** (r128) & **Vanta.js** (Neural Net 3D background)
 - **GSAP (GreenSock)** & **ScrollTrigger** for smooth scroll animations
-- **HTML5 Canvas API** for custom particles, 3D DNA rendering, and image cropping
+- **HTML5 Canvas API** for custom particles and 3D DNA rendering
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Yoga_Portfolio/
-├── index.html        # Main HTML structure with semantic sections and modals
+├── index.html        # Main HTML structure with semantic sections and SVG vector designs
 ├── style.css         # Complete styling, animations, responsive design system
-├── script.js         # 3D animations, particles, interactions, WhatsApp photo engine
-├── profile.jpg       # Default profile avatar
+├── script.js         # 3D animations, particles, interactions
+├── profile.jpg       # Profile photograph
 ├── Yoga_resume.pdf   # Downloadable curriculum vitae / resume
 └── README.md         # Project documentation
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To run this portfolio locally on your machine:
 
@@ -72,7 +72,7 @@ To run this portfolio locally on your machine:
 
 ---
 
-## 🌐 Deploy to GitHub Pages
+## Deploy to GitHub Pages
 
 To make your portfolio live on GitHub Pages:
 1. Go to your repository on GitHub: [https://github.com/yogananda151/Yoga_Portfolio](https://github.com/yogananda151/Yoga_Portfolio)
@@ -83,7 +83,7 @@ To make your portfolio live on GitHub Pages:
 
 ---
 
-## 📬 Contact & Connect
+## Contact & Connect
 
 - **Name**: K Yogananda Reddy
 - **Email**: [yogananda1585@gmail.com](mailto:yogananda1585@gmail.com)

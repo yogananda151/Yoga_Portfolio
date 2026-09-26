@@ -175,15 +175,31 @@
 
                     <div class="about-badges">
                         <div class="badge-item">
-                            <span class="badge-icon">&lt;/&gt;</span>
+                            <span class="badge-icon-wrap">
+                                <svg class="badge-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"/>
+                                    <polyline points="8 6 2 12 8 18"/>
+                                </svg>
+                            </span>
                             <span>Fluent in Algorithms</span>
                         </div>
                         <div class="badge-item">
-                            <span class="badge-icon">&#9889;</span>
+                            <span class="badge-icon-wrap">
+                                <svg class="badge-svg icon-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </span>
                             <span>Passionate about AI</span>
                         </div>
                         <div class="badge-item">
-                            <span class="badge-icon">&#128640;</span>
+                            <span class="badge-icon-wrap">
+                                <svg class="badge-svg icon-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                                    <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                                    <path d="M9 12H4s.55-3.03 2-4.5c1.62-1.63 5-2.5 5-2.5"/>
+                                    <path d="M12 15v5s3.03-.55 4.5-2c1.63-1.62 2.5-5 2.5-5"/>
+                                </svg>
+                            </span>
                             <span>Innovation Driven</span>
                         </div>
                     </div>
@@ -459,14 +475,87 @@
             <div class="tech-pills-section">
                 <h3 class="tech-pills-title">Interest Areas</h3>
                 <div class="tech-pills">
-                    <span class="tech-pill">&#129302; Generative AI</span>
-                    <span class="tech-pill">&#129504; Large Language Models</span>
-                    <span class="tech-pill">&#128218; RAG Systems</span>
-                    <span class="tech-pill">&#129309; Multi-Agent Systems</span>
-                    <span class="tech-pill">&#128269; NLP</span>
-                    <span class="tech-pill">&#128202; Data Science</span>
-                    <span class="tech-pill">&#9889; FastAPI</span>
-                    <span class="tech-pill">&#128013; Python</span>
+                    <span class="tech-pill pill-genai">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l2.4 5.6L20 10l-5.6 2.4L12 18l-2.4-5.6L4 10l5.6-2.4L12 2z"/>
+                                <path d="M19 17l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1 1-2.5z"/>
+                            </svg>
+                        </span>
+                        <span>Generative AI</span>
+                    </span>
+                    <span class="tech-pill pill-llm">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z"/>
+                                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z"/>
+                            </svg>
+                        </span>
+                        <span>Large Language Models</span>
+                    </span>
+                    <span class="tech-pill pill-rag">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                <line x1="12" y1="5" x2="12" y2="22"/>
+                            </svg>
+                        </span>
+                        <span>RAG Systems</span>
+                    </span>
+                    <span class="tech-pill pill-agents">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-nodes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="5" r="3"/>
+                                <circle cx="6" cy="12" r="3"/>
+                                <circle cx="18" cy="19" r="3"/>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                            </svg>
+                        </span>
+                        <span>Multi-Agent Systems</span>
+                    </span>
+                    <span class="tech-pill pill-nlp">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                <line x1="8" y1="10" x2="8" y2="10.01"/>
+                                <line x1="12" y1="10" x2="12" y2="10.01"/>
+                                <line x1="16" y1="10" x2="16" y2="10.01"/>
+                            </svg>
+                        </span>
+                        <span>NLP</span>
+                    </span>
+                    <span class="tech-pill pill-data">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                                <path d="M3 15l4-4 4 4 8-8"/>
+                            </svg>
+                        </span>
+                        <span>Data Science</span>
+                    </span>
+                    <span class="tech-pill pill-fastapi">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </span>
+                        <span>FastAPI</span>
+                    </span>
+                    <span class="tech-pill pill-python">
+                        <span class="pill-icon-wrap">
+                            <svg class="pill-svg icon-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                                <line x1="14" y1="4" x2="10" y2="20"/>
+                            </svg>
+                        </span>
+                        <span>Python</span>
+                    </span>
                 </div>
             </div>
         </div>
