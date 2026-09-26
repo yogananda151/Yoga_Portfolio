@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Yogananda Reddy | CS & AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of K Yogananda Reddy - CS & AI Engineering student passionate about Generative AI, LLMs, RAG, and Multi-Agent Systems.">
+    <meta name="keywords" content="Yogananda Reddy, AI Engineer, Machine Learning, Python, Portfolio, Generative AI, LLM">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+<body>
+
+    <div id="vanta-bg"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">YNR</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="btn-primary">Hire Me</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for Opportunities</span>
+            </div>
+            <h1 class="hero-name gradient-text">K YOGANANDA REDDY</h1>
+            <h2 class="hero-subtitle">Welcome to My Portfolio</h2>
+            <p class="hero-tagline">Exploring AI, ML &amp; Emerging Technologies</p>
+
+            <div class="hero-icons">
+                <div class="hero-icon-card" title="AI & Machine Learning">
+                    <div class="icon-inner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                    </div>
+                    <span>AI/ML</span>
+                </div>
+                <div class="hero-icon-card" title="Hardware & Computing">
+                    <div class="icon-inner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+                    </div>
+                    <span>Systems</span>
+                </div>
+                <div class="hero-icon-card" title="Innovation & GenAI">
+                    <div class="icon-inner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <span>GenAI</span>
+                </div>
+                <div class="hero-icon-card" title="DSA & LeetCode">
+                    <div class="icon-inner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <span>DSA</span>
+                </div>
+            </div>
+
+            <div class="hero-info">
+                <span class="hero-role">CS &amp; AI Engineering Student</span>
+                <p class="hero-skills-text">Generative AI &bull; LLMs &bull; RAG &bull; Multi-Agent Systems &bull; Python</p>
+            </div>
+
+            <div class="hero-cta-group">
+                <a href="#projects" class="btn-primary btn-lg">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                    View Projects
+                </a>
+                <a href="https://github.com/yogananda151" target="_blank" class="btn-ghost btn-lg">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number gradient-text" data-target="151">0</span>
+                    <span class="stat-label">LeetCode Problems</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number gradient-text" data-target="3">0</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number gradient-text">6.85</span>
+                    <span class="stat-label">CGPA</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3D Rotating Shape -->
+        <div class="hero-3d-container">
+            <canvas id="dna-canvas"></canvas>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-blue">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-col">
+                    <div class="profile-wrapper">
+                        <div class="orbit-ring orbit-1"></div>
+                        <div class="orbit-ring orbit-2"></div>
+                        <div class="orbit-dot dot-1"></div>
+                        <div class="orbit-dot dot-2"></div>
+                        <div class="profile-circle" id="profileCircle" role="button" tabindex="0" title="Click to view or change profile photo" aria-label="Profile photo, click to change or view">
+                            <img src="profile.jpg" alt="K Yogananda Reddy" class="profile-photo" id="profileImg">
+                            <div class="profile-photo-overlay">
+                                <svg class="camera-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                    <circle cx="12" cy="13" r="4"/>
+                                </svg>
+                                <span class="overlay-text">CHANGE<br>PROFILE PHOTO</span>
+                            </div>
+                        </div>
+                        <!-- WhatsApp-Style Floating Camera Badge Button -->
+                        <button class="wa-camera-badge" id="waCameraBadge" title="Change Profile Photo" aria-label="Change profile photo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                <circle cx="12" cy="13" r="4"/>
+                            </svg>
+                        </button>
+                        <!-- Active Custom Photo Pill Indicator -->
+                        <div class="wa-custom-pill" id="waCustomPill" style="display:none;">
+                            <span class="wa-pill-dot"></span>
+                            <span>Custom Photo Active</span>
+                            <button id="waPillResetBtn" title="Reset to original photo">&times;</button>
+                        </div>
+                        <input type="file" id="profilePhotoInput" accept="image/png,image/jpeg,image/webp,image/jpg" style="display:none;">
+                        <div class="floating-cube">
+                            <div class="cube">
+                                <div class="face front"></div>
+                                <div class="face back"></div>
+                                <div class="face left"></div>
+                                <div class="face right"></div>
+                                <div class="face top"></div>
+                                <div class="face bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content-col">
+                    <h3 class="about-heading">CS &amp; AI Engineering Student passionate about building intelligent systems</h3>
+                    <p class="about-text">
+                        I specialize in developing AI-powered solutions, with a deep interest in Generative AI, 
+                        Large Language Models, Retrieval-Augmented Generation (RAG), and Multi-Agent Systems. 
+                        Passionate about bridging complex algorithms with real-world applications.
+                    </p>
+                    <p class="about-text">
+                        Currently pursuing B.E. in Computer Science-AI at Amrita Vishwa Vidyapeetham, Coimbatore. 
+                        I've built hands-on projects from an Online Voting System to AI-powered robotics. 
+                        I believe in continuous learning and building impactful solutions.
+                    </p>
+
+                    <div class="about-badges">
+                        <div class="badge-item">
+                            <span class="badge-icon">&lt;/&gt;</span>
+                            <span>Fluent in Algorithms</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">&#9889;</span>
+                            <span>Passionate about AI</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">&#128640;</span>
+                            <span>Innovation Driven</span>
+                        </div>
+                    </div>
+
+                    <div class="quote-card glass-card">
+                        <div class="quote-icon">"</div>
+                        <p class="quote-text">Engineering the future with AI, one neural network at a time.</p>
+                    </div>
+
+                    <div class="about-links">
+                        <a href="https://linkedin.com" target="_blank" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/yogananda151" target="_blank" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://leetcode.com/u/yogananda151/" target="_blank" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.038-1.9l-2.609-2.519c-.756-.731-1.754-1.101-2.799-1.101s-2.043.371-2.799 1.101l-4.62 4.66C4.109 12.273 3.745 13.26 3.745 14.273s.365 2.002 1.101 2.737l4.623 4.665c.756.731 1.754 1.101 2.799 1.101s2.043-.371 2.799-1.101l2.609-2.519c.515-.514.497-1.365-.038-1.9-.535-.534-1.385-.552-1.9-.038z"/></svg>
+                            LeetCode
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-pink">Featured Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Interactive gallery showcasing projects that push the boundaries of what's possible</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-tilt>
+                    <div class="card-top">
+                        <div class="project-icon-badge" style="background: linear-gradient(135deg, #f97316, #ef4444);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/yogananda151" target="_blank" class="card-action-btn" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Online Voting System</h3>
+                    <p class="project-desc">Web-based electronic voting platform with separate voter and administrator workflows. Features authentication, role-based access control, vote validation, and database-backed result handling.</p>
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <div class="project-card-glow"></div>
+                </div>
+
+                <div class="project-card glass-card" data-tilt>
+                    <div class="card-top">
+                        <div class="project-icon-badge" style="background: linear-gradient(135deg, #8b5cf6, #c084fc);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/yogananda151" target="_blank" class="card-action-btn" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Spectral Imputation</h3>
+                    <p class="project-desc">Machine learning pipeline to reconstruct missing values in air-pollution time-series data using preprocessing and predictive modeling. Evaluated with quantitative error metrics.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Scikit-learn</span>
+                    </div>
+                    <div class="project-card-glow"></div>
+                </div>
+
+                <div class="project-card glass-card" data-tilt>
+                    <div class="card-top">
+                        <div class="project-icon-badge" style="background: linear-gradient(135deg, #06b6d4, #0ea5e9);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="card-action-btn" title="Hardware Project">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Adaptive Grass Cutting Robot</h3>
+                    <p class="project-desc">Chlorophyll fluorescence-based sensing system using optical sensor and Arduino. Adaptive blade-speed control based on grass density with integrated ultrasonic obstacle detection.</p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Sensors</span>
+                        <span class="tag">PWM</span>
+                    </div>
+                    <div class="project-card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-cyan">Education Timeline</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">My academic journey and milestones</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="timeline-role">Bachelor of Engineering in CS-AI</h3>
+                                <span class="timeline-company">Amrita Vishwa Vidyapeetham, Coimbatore</span>
+                            </div>
+                        </div>
+                        <div class="timeline-date">August 2024 - Present</div>
+                        <p class="timeline-desc">Specializing in Computer Science with Artificial Intelligence. Studying core CS concepts alongside advanced AI/ML subjects, algorithms, and data structures.</p>
+                        <div class="timeline-highlight">
+                            <span class="highlight-badge">CGPA: 6.85/10 (up to Sem IV)</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">MATLAB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-icon-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="timeline-role">Intermediate Education (MPC)</h3>
+                                <span class="timeline-company">Narayana Junior College</span>
+                            </div>
+                        </div>
+                        <div class="timeline-date">June 2022 - March 2024</div>
+                        <p class="timeline-desc">Completed Intermediate education focusing on Mathematics, Physics, and Chemistry under Board of Intermediate Education, Andhra Pradesh.</p>
+                        <div class="timeline-highlight">
+                            <span class="highlight-badge">Percentage: 83.8%</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Mathematics</span>
+                            <span class="tag">Physics</span>
+                            <span class="tag">Chemistry</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-pink">Tech Stack</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies and tools I use to build intelligent systems</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category-card glass-card">
+                    <h3 class="skill-cat-title">Programming Languages</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">Python</span><span class="skill-pct gradient-text">90%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">SQL</span><span class="skill-pct gradient-text">75%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">JavaScript</span><span class="skill-pct gradient-text">70%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">Java (Basic)</span><span class="skill-pct gradient-text">55%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="55"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-card glass-card">
+                    <h3 class="skill-cat-title">Web Technologies</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">HTML/CSS</span><span class="skill-pct gradient-text">85%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">Flask</span><span class="skill-pct gradient-text">75%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">FastAPI</span><span class="skill-pct gradient-text">70%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">React</span><span class="skill-pct gradient-text">65%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-card glass-card">
+                    <h3 class="skill-cat-title">AI/ML Libraries</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">NumPy</span><span class="skill-pct gradient-text">85%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">Pandas</span><span class="skill-pct gradient-text">80%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">Scikit-learn</span><span class="skill-pct gradient-text">75%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">Matplotlib</span><span class="skill-pct gradient-text">80%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category-card glass-card">
+                    <h3 class="skill-cat-title">Tools &amp; Databases</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">Git/GitHub</span><span class="skill-pct gradient-text">85%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">MySQL</span><span class="skill-pct gradient-text">75%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">MongoDB</span><span class="skill-pct gradient-text">65%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header"><span class="skill-name">MATLAB</span><span class="skill-pct gradient-text">70%</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-pills-section">
+                <h3 class="tech-pills-title">Interest Areas</h3>
+                <div class="tech-pills">
+                    <span class="tech-pill">&#129302; Generative AI</span>
+                    <span class="tech-pill">&#129504; Large Language Models</span>
+                    <span class="tech-pill">&#128218; RAG Systems</span>
+                    <span class="tech-pill">&#129309; Multi-Agent Systems</span>
+                    <span class="tech-pill">&#128269; NLP</span>
+                    <span class="tech-pill">&#128202; Data Science</span>
+                    <span class="tech-pill">&#9889; FastAPI</span>
+                    <span class="tech-pill">&#128013; Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CODING PROFILES SECTION -->
+    <section id="coding" class="coding-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-blue">Coding Profiles</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Consistency in problem solving and competitive programming</p>
+            </div>
+            <div class="coding-cards">
+                <div class="coding-card glass-card">
+                    <div class="coding-icon" style="color: #ffa116;">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.038-1.9l-2.609-2.519c-.756-.731-1.754-1.101-2.799-1.101s-2.043.371-2.799 1.101l-4.62 4.66C4.109 12.273 3.745 13.26 3.745 14.273s.365 2.002 1.101 2.737l4.623 4.665c.756.731 1.754 1.101 2.799 1.101s2.043-.371 2.799-1.101l2.609-2.519c.515-.514.497-1.365-.038-1.9-.535-.534-1.385-.552-1.9-.038z"/></svg>
+                    </div>
+                    <div class="coding-info">
+                        <h3>LeetCode</h3>
+                        <p class="coding-handle">yogananda151</p>
+                        <div class="coding-stat">
+                            <span class="big-number gradient-text">151+</span>
+                            <span class="coding-stat-label">DSA Problems Solved</span>
+                        </div>
+                    </div>
+                    <a href="https://leetcode.com/u/yogananda151/" target="_blank" class="btn-primary btn-sm">View Profile</a>
+                </div>
+
+                <div class="coding-card glass-card">
+                    <div class="coding-icon" style="color: #6e7681;">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <div class="coding-info">
+                        <h3>GitHub</h3>
+                        <p class="coding-handle">View Repositories</p>
+                        <div class="coding-stat">
+                            <span class="big-number gradient-text">3+</span>
+                            <span class="coding-stat-label">Projects Published</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/yogananda151" target="_blank" class="btn-primary btn-sm">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-cyan">Let's Connect</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Ready to collaborate on the next big AI innovation? Let's build something amazing together.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-col glass-card">
+                    <div class="form-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <h3>Send a Message</h3>
+                    </div>
+                    <form id="contact-form" class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder=" ">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn-primary btn-lg btn-full" id="submit-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            <span>Send Message</span>
+                        </button>
+                        <div id="form-success" class="form-success hidden">
+                            Message sent! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info-col">
+                    <div class="robot-container">
+                        <canvas id="robot-canvas"></canvas>
+                    </div>
+
+                    <div class="connect-info glass-card">
+                        <h3 class="connect-title">Connect With Me</h3>
+                        <div class="contact-detail-items">
+                            <a href="mailto:yogananda1585@gmail.com" class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <span class="detail-label">Email</span>
+                                    <span class="detail-value">yogananda1585@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+919347330306" class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="detail-label">Phone</span>
+                                    <span class="detail-value">+91 93473 30306</span>
+                                </div>
+                            </a>
+                            <a href="https://leetcode.com/u/yogananda151/" target="_blank" class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.038-1.9l-2.609-2.519c-.756-.731-1.754-1.101-2.799-1.101s-2.043.371-2.799 1.101l-4.62 4.66C4.109 12.273 3.745 13.26 3.745 14.273s.365 2.002 1.101 2.737l4.623 4.665c.756.731 1.754 1.101 2.799 1.101s2.043-.371 2.799-1.101l2.609-2.519c.515-.514.497-1.365-.038-1.9-.535-.534-1.385-.552-1.9-.038z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="detail-label">LeetCode</span>
+                                    <span class="detail-value">yogananda151</span>
+                                </div>
+                            </a>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Kadapa, Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo gradient-text">K Yogananda Reddy</div>
+            <p class="footer-text">Engineering the future with AI, one neural network at a time.</p>
+            <div class="footer-links">
+                <a href="https://github.com/yogananda151" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://leetcode.com/u/yogananda151/" target="_blank">LeetCode</a>
+                <a href="mailto:yogananda1585@gmail.com">Email</a>
+            </div>
+            <p class="footer-copy">2025 K Yogananda Reddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ==========================================
+         WHATSAPP-STYLE PROFILE PHOTO MODALS & UI
+         ========================================== -->
+    <!-- 1. WhatsApp Action Menu Modal -->
+    <div class="wa-modal-backdrop" id="waMenuModal" style="display:none;" aria-hidden="true">
+        <div class="wa-modal-card wa-menu-card" role="dialog" aria-modal="true" aria-labelledby="waMenuTitle">
+            <div class="wa-modal-header">
+                <div class="wa-header-brand">
+                    <span class="wa-header-dot"></span>
+                    <h3 id="waMenuTitle">Profile photo</h3>
+                </div>
+                <button class="wa-modal-close" id="waMenuCloseBtn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="wa-menu-options">
+                <button class="wa-menu-item" id="waOptView" type="button">
+                    <div class="wa-menu-icon wa-icon-view">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="wa-menu-text">
+                        <span class="wa-menu-label">View photo</span>
+                        <span class="wa-menu-desc">Preview current profile photo</span>
+                    </div>
+                </button>
+
+                <button class="wa-menu-item" id="waOptTake" type="button">
+                    <div class="wa-menu-icon wa-icon-camera">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                            <circle cx="12" cy="13" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="wa-menu-text">
+                        <span class="wa-menu-label">Take photo</span>
+                        <span class="wa-menu-desc">Use camera / webcam</span>
+                    </div>
+                </button>
+
+                <button class="wa-menu-item" id="waOptUpload" type="button">
+                    <div class="wa-menu-icon wa-icon-upload">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="17 8 12 3 7 8"/>
+                            <line x1="12" y1="3" x2="12" y2="15"/>
+                        </svg>
+                    </div>
+                    <div class="wa-menu-text">
+                        <span class="wa-menu-label">Upload photo</span>
+                        <span class="wa-menu-desc">Choose an image from your device</span>
+                    </div>
+                </button>
+
+                <button class="wa-menu-item wa-item-danger" id="waOptRemove" type="button">
+                    <div class="wa-menu-icon wa-icon-trash">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6"/>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                            <line x1="10" y1="11" x2="10" y2="17"/>
+                            <line x1="14" y1="11" x2="14" y2="17"/>
+                        </svg>
+                    </div>
+                    <div class="wa-menu-text">
+                        <span class="wa-menu-label">Remove photo</span>
+                        <span class="wa-menu-desc">Reset to original default photo</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. WhatsApp Crop & Adjust Modal -->
+    <div class="wa-modal-backdrop" id="waCropModal" style="display:none;" aria-hidden="true">
+        <div class="wa-modal-card wa-crop-card" role="dialog" aria-modal="true" aria-labelledby="waCropTitle">
+            <div class="wa-modal-header">
+                <div class="wa-header-brand">
+                    <button class="wa-back-btn" id="waCropBackBtn" title="Back to options" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="19" y1="12" x2="5" y2="12"/>
+                            <polyline points="12 19 5 12 12 5"/>
+                        </svg>
+                    </button>
+                    <h3 id="waCropTitle">Drag the image to adjust</h3>
+                </div>
+                <button class="wa-modal-close" id="waCropCloseBtn" aria-label="Close dialog" type="button">&times;</button>
+            </div>
+            
+            <div class="wa-crop-workspace">
+                <div class="wa-crop-viewport" id="waCropViewport">
+                    <canvas id="waCropCanvas" width="300" height="300"></canvas>
+                    <div class="wa-crop-overlay-mask">
+                        <div class="wa-crop-circle-cutout"></div>
+                    </div>
+                </div>
+                <p class="wa-crop-hint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 9l-3 3 3 3M9 5l3-3 3 3M15 19l-3 3-3-3M19 9l3 3-3 3"/></svg>
+                    Drag to reposition &bull; Scroll or slider to zoom
+                </p>
+            </div>
+
+            <div class="wa-crop-controls">
+                <div class="wa-zoom-bar">
+                    <button class="wa-zoom-btn" id="waZoomOutBtn" title="Zoom Out" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <input type="range" id="waZoomSlider" min="0.5" max="3" step="0.01" value="1" aria-label="Zoom profile photo">
+                    <button class="wa-zoom-btn" id="waZoomInBtn" title="Zoom In" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                </div>
+                <button class="wa-rotate-btn" id="waRotateBtn" title="Rotate 90 degrees clockwise" type="button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 4 23 10 17 10"/>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                    </svg>
+                    <span>Rotate</span>
+                </button>
+            </div>
+
+            <div class="wa-crop-footer">
+                <button class="wa-btn-secondary" id="waCropCancelBtn" type="button">Cancel</button>
+                <button class="wa-btn-primary" id="waCropSaveBtn" type="button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Save Photo</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. WhatsApp Camera Live Capture Modal -->
+    <div class="wa-modal-backdrop" id="waCameraModal" style="display:none;" aria-hidden="true">
+        <div class="wa-modal-card wa-camera-card" role="dialog" aria-modal="true" aria-labelledby="waCameraTitle">
+            <div class="wa-modal-header">
+                <div class="wa-header-brand">
+                    <button class="wa-back-btn" id="waCameraBackBtn" title="Back to options" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="19" y1="12" x2="5" y2="12"/>
+                            <polyline points="12 19 5 12 12 5"/>
+                        </svg>
+                    </button>
+                    <h3 id="waCameraTitle">Take photo</h3>
+                </div>
+                <button class="wa-modal-close" id="waCameraCloseBtn" aria-label="Close dialog" type="button">&times;</button>
+            </div>
+
+            <div class="wa-camera-workspace">
+                <div class="wa-camera-viewport" id="waCameraViewport">
+                    <video id="waCameraVideo" autoplay playsinline muted></video>
+                    <div class="wa-camera-guide"></div>
+                    <div class="wa-camera-flash" id="waCameraFlash"></div>
+                    <div class="wa-camera-error" id="waCameraError" style="display:none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <p id="waCameraErrorText">Camera access not available or permission denied.</p>
+                        <button class="wa-btn-secondary" id="waCameraUploadFallback" type="button">Upload from device instead</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wa-camera-footer">
+                <button class="wa-shutter-btn" id="waShutterBtn" title="Snap photo" aria-label="Snap photo" type="button">
+                    <span class="wa-shutter-inner"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. WhatsApp Lightbox View Modal -->
+    <div class="wa-modal-backdrop" id="waViewModal" style="display:none;" aria-hidden="true">
+        <div class="wa-lightbox-card" role="dialog" aria-modal="true" aria-label="View profile photo">
+            <div class="wa-lightbox-top">
+                <div class="wa-lightbox-title">
+                    <span class="wa-header-dot"></span>
+                    <span>Profile photo</span>
+                </div>
+                <div class="wa-lightbox-actions">
+                    <button class="wa-btn-glass" id="waViewChangeBtn" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        <span>Change</span>
+                    </button>
+                    <button class="wa-modal-close" id="waViewCloseBtn" aria-label="Close dialog" type="button">&times;</button>
+                </div>
+            </div>
+            <div class="wa-lightbox-image-wrap">
+                <img id="waViewFullImg" src="profile.jpg" alt="Profile Photo">
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. WhatsApp Toast Notification -->
+    <div class="wa-toast" id="waToast" role="status" aria-live="polite">
+        <div class="wa-toast-icon" id="waToastIcon">✓</div>
+        <div class="wa-toast-msg" id="waToastMsg">Profile photo updated successfully</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
