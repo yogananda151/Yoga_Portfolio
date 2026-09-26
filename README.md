@@ -17,12 +17,6 @@
   - Floating 3D CSS isometric cubes with multi-layer depth.
   - Custom cursor glow and trailing particles.
   
-- **🟢 WhatsApp-Style Profile Photo System**:
-  - **Live Camera Capture**: Real-time webcam viewfinder with circular framing guide, shutter snap, and camera flash effect.
-  - **Crop & Adjust Workspace**: Interactive drag-to-pan, zoom slider (0.5x – 3.0x), mouse-wheel zoom, and 90° rotation.
-  - **WhatsApp UI/UX**: Hover overlay with signature green camera badge, circular cutouts, and popup action sheet.
-  - **Persistent Storage**: Changes automatically saved in `localStorage` across sessions with instant reset-to-default.
-  - **Toast Notifications**: Smooth WhatsApp-style toast alerts for instant feedback.
 
 - **💻 Interactive Showcase**:
   - **Projects Section**: Interactive glassmorphism project cards with live demo & GitHub repository links.
